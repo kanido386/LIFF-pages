@@ -1,0 +1,51 @@
+body {
+  background: gray;
+  /* make text unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.square {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: blue;
+  outline: 3px solid black;
+}
+
+#clock {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+  font-size: 80px;
+}
+
+#board {
+  width: 800px;
+  height: 400px;
+  line-height: 400px;
+  text-align: center;
+  font-size: 100px;
+  margin: 100px auto 0 auto;
+}
+
+#button {
+  width: 140px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  font-size: 48px;
+  border: 2px solid white;
+  margin: 50px auto 0 auto;
+}
+
+#button:hover {
+  cursor: pointer;
+  background: pink;
+}

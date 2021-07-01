@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .flex-container{
+            display: flex;
+            flex-flow: row wrap;
+            align-content: flex-start;
+            padding: 0;
+            margin: 0;
+            
+        }
+
+        .temp{
+            width: 100%;
+            height: 30px;
+            background-color: lightblue;
+        }
+        .symptom_checkboxes input[type = radio]{
+            display: none;
+        }
+
+        .symptom_checkboxes input[type = radio]:checked + .flex-item{
+            background-color: gray;
+        }
+
+        .flex-item{
+            border: 1px solid rgb(69, 186, 174)  ; 
+            border-radius: 10px;
+            padding: 7px;
+            margin: 5px;
+            text-align: center;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>健康小百科</h1>
+    <div>
+        <label for = "what">其他：</label>
+        <input id = "what" type = "text" placeholder="">
+        <button class = "search">search</button>
+    </div>
+
+    <div class = "flex-container symptom_checkboxes">    
+        <input type = "radio" name = "type-of-ache" value = "0" id = "stomach-ache" data-ch_name = "肚子痛" />
+        <label class = "flex-item" for = "stomach-ache">肚子痛</label>
+        
+        <input type = "radio" name = "type-of-ache" value = "1" id = "butt-ache" data-ch_name = "屁股痛"/>
+        <label class = "flex-item" for = "butt-ache">屁股痛</label>
+
+        <input type = "radio" name = "type-of-ache" value = "2" id = "head-ache" data-ch_name = "頭痛"/>
+        <label class = "flex-item" for = "head-ache">頭痛</label>
+    </div>
+
+
+    <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+    <script src = "index.js"></script>
+</body>
+</html>
