@@ -40,7 +40,7 @@ function initializeLiff(myLiffId) {
   });
 }
 
-initializeLiff('1656147392-N9OGxeGa');
+initializeLiff('1656147392-7bZOXoOQ');
 
 // ========================= ⬇️ 函數 ⬇️ =========================
 
